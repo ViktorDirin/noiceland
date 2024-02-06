@@ -16,10 +16,81 @@
 
 /* Medium Devices, Desktops ------------------------- 992 ---------------------------------------*/
 @media only screen and (max-width: 992px) {
+  .info {
+    &-subtitle {
+      margin-bottom: 16px;
+    }
+    &-title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+  .posts {
+    &__inner {
+      justify-content: center;
+    }
+    &__item {
+      width: 32%;
+    }
+    &__btn {
+      margin: 65px auto 0;
+      &-wraper {
+        display: flex;
+        width: 100%;
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets  ----------------------------------------------- 768 --------------------*/
 @media only screen and (max-width: 768px) {
+  .welcome {
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &-image {
+      margin: 0 auto 20px;
+    }
+    &__info {
+      &-subtitle,
+      &-title,
+      &-text {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .photo {
+    &__inner {
+      justify-content: center;
+    }
+    &__item {
+      width: 46%;
+    }
+  }
+  .posts__item {
+    width: 46%;
+  }
+  .footer {
+    &__inner {
+      padding: 30px 0;
+    }
+    &__right,
+    &-line {
+      margin-bottom: 30px;
+    }
+    &__nav {
+      flex-wrap: wrap;
+      &-wraper {
+        width: 100%;
+      }
+      &-categories {
+        margin-bottom: 0;
+      }
+      &-list {
+        margin-bottom: 26px;
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets ----------------------------------------------- 576 --------------------*/
@@ -28,6 +99,50 @@
 
 /* Extra Small Devices, Phones ----------------------------------------------- 480 --------------------*/
 @media only screen and (max-width: 480px) {
+  .header {
+    &__inner {
+      padding: 10px 0;
+    }
+    &__logo {
+      width: 80px;
+      height: 10px;
+    }
+    &__nav-list {
+      gap: 22px;
+    }
+  }
+  .welcome {
+    &__inner {
+      padding: 20px 0;
+    }
+    &-image {
+      max-width: 80%;
+    }
+    &__info {
+      &-subtitle,
+      &-title,
+      &-text {
+        margin-bottom: 4px;
+      }
+    }
+  }
+  .welcome__info-title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .photo__item {
+    width: 100%;
+    &-img {
+      margin: 0 auto 20px;
+    }
+  }
+  .posts__item,
+  .featured__item {
+    width: 100%;
+  }
+  .footer__nav-link {
+    font-size: 10px;
+  }
 }
 
 /* Extra Small Devices, Phones ----------------------------------------------- 320 --------------------*/
